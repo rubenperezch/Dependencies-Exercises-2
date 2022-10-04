@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="button">
+    <form th:action = "@{/useful/colored}" action = '#' method="get">
+        <input type = "submit" value ="Colored">
+    </form>
+</div>
+<div class="button">
+    <form th:action = "@{/useful/email}" action = '#' method="post">
+        <input type="text" placeholder="...email here" name="email">
+        <input type = "submit" value ="Email Check">
+    </form>
+</div>
+<div class="button">
+    <form th:action = "@{/useful/encode}" action = '#' method="post">
+        <input type="text" placeholder="...word here" name="word">
+        <input type="text" placeholder="...number here" name="number">
+        <input type = "submit" value ="Encode">
+    </form>
+</div>
+<div class="button">
+    <form th:action = "@{/useful/decode}" action = '#' method="post">
+        <input type="text" placeholder="...word here" name="word">
+        <input type="text" placeholder="...number here" name="number">
+        <input type = "submit" value ="Decode">
+    </form>
+</div>
+
+</body>
+</html>
